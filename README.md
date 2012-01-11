@@ -1,4 +1,4 @@
-ITPShare Module for Joomla! 
+ITPSubscribe Module for Joomla! 
 ==========================
 ( Version 1.6 )
 --------------------------

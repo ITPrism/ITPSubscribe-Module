@@ -1,5 +1,5 @@
 <?php // no direct access
-defined('_JEXEC') or die('Restricted access'); ?>
+defined('_JEXEC') or die;?>
 <div id="itp-social-box<?php echo $params->get('moduleClassSfx');?>">
 
 <?php if($params->get("mail_form")){?>
