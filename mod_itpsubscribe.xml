@@ -21,6 +21,7 @@
 		<fields name="params">
 			<fieldset name="basic">
 						
+			    <field name="spacer1" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_ICONS_LABEL" />
 				<field name="style" type="list" default="small" label="MOD_ITPSUBSCRIBE_RSS_EMAIL_STYLES" description="MOD_ITPSUBSCRIBE_RSS_EMAIL_STYLES_DESC" >
 				   <option value="small">Small</option>
 				   <option value="big1">Big1 - 64px</option>
@@ -49,65 +50,77 @@
 		           <option value="big24">Big24 - 60px</option>
 				</field>
 				
-				<field name="spacer1" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_RSS_LABEL" />
+				<field name="spacer2" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_RSS_LABEL" />
 				
 				<field name="show_rss" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_RSS" description="MOD_ITPSUBSCRIBE_SHOW_RSS_DESC" >
-				   <option value="0">Hide</option>
-				   <option value="1">Show</option>
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
 				</field>
 				<field name="rss_title" type="text" default="Subscribe in a reader" size="100" label="MOD_ITPSUBSCRIBE_RSS_TITLE" description="MOD_ITPSUBSCRIBE_RSS_TITLE_DESC" />
 				<field name="rss_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_RSS_LINK" description="MOD_ITPSUBSCRIBE_RSS_LINK_DESC" />
 				<field name="rss_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
-		           <option value="0">Current window</option>
-		           <option value="1">New window</option>
+		           <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+		           <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
 		        </field>
 		        
-				<field name="spacer2" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_FACEBOOK_LABEL" />
+				<field name="spacer3" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_FACEBOOK_LABEL" />
 						
 				<field name="show_facebook" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_FACEBOOK" description="MOD_ITPSUBSCRIBE_SHOW_FACEBOOK_DESC" >
-				   <option value="0">Hide</option>
-				   <option value="1">Show</option>
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
 				</field>
 				
-				<field name="facebook_title" type="text" default="Facebok page" size="100" label="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE" description="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE_DESC" />
+				<field name="facebook_title" type="text" default="Facebook page" size="100" label="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE" description="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE_DESC" />
 				<field name="facebook_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_FACEBOOK_ADDRESS" description="MOD_ITPSUBSCRIBE_FACEBOOK_ADDRESS_DESC" />
 				<field name="facebook_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
-                   <option value="0">Current window</option>
-                   <option value="1">New window</option>
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
                 
-				<field name="spacer3" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_TWITTER_LABEL" />
+				<field name="spacer4" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_TWITTER_LABEL" />
 				
 				<field name="show_twitter" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_TWITTER" description="MOD_ITPSUBSCRIBE_SHOW_TWITTER_DESC" >
-				   <option value="0">Hide</option>
-				   <option value="1">Show</option>
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
 				</field>
 				
 				<field name="twitter_title" type="text" default="Follow me" size="100" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_TITLE_DESC" />
 				<field name="twitter_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_TWITTER_URL" description="MOD_ITPSUBSCRIBE_TWITTER_URL_DESC" />
 				<field name="twitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
-                   <option value="0">Current window</option>
-                   <option value="1">New window</option>
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
                 
-				<field name="spacer4" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EMAIL_LABEL" />
-						
+				<field name="spacer5" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EMAIL_LABEL" />
 				<field name="show_email" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_EMAIL" description="MOD_ITPSUBSCRIBE_SHOW_EMAIL_DESC" >
-				   <option value="0">Hide</option>
-				   <option value="1">Show</option>
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
 				</field>
 				
 				<field name="email_title" type="text" default="Subscribe by E-Mail" size="100" label="MOD_ITPSUBSCRIBE_EMAIL_TITLE" description="MOD_ITPSUBSCRIBE_EMAIL_TITLE_DESC" />
 				<field name="email_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_EMAIL_ADDRESS" description="MOD_ITPSUBSCRIBE_EMAIL_ADDRESS_DESC" />
 				<field name="email_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
-                   <option value="0">Current window</option>
-                   <option value="1">New window</option>
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
-				<field name="spacer5" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_LABEL" />
-						
+
+                <field name="spacer6" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_GOOGLE_LABEL" />
+                <field name="show_google" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_GOOGLE" description="MOD_ITPSUBSCRIBE_SHOW_GOOGLE_DESC" >
+                   <option value="0">JHIDE</option>
+                   <option value="1">JSHOW</option>
+                </field>
+                
+                <field name="google_title" type="text" default="Google+ page" size="100" label="MOD_ITPSUBSCRIBE_GOOGLE_TITLE" description="MOD_ITPSUBSCRIBE_GOOGLE_TITLE_DESC" />
+                <field name="google_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_GOOGLE_ADDRESS" description="MOD_ITPSUBSCRIBE_GOOGLE_ADDRESS_DESC" />
+                <field name="google_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
+                </field>
+                                
+				<field name="spacer7" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_LABEL" />
 				<field name="show_extra_twitter" type="radio" default="0" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_DESC" >
-				   <option value="0">Hide</option>
-				   <option value="1">Show</option>
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
 				</field>
 				
 				<field name="extra_twitter_title" type="text" default="Follow me" size="100" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_TITLE_DESC" />
@@ -277,19 +290,19 @@
 		            <option value="twitter161.png">Twitter 161</option>
 				</field>
 			     <field name="extratwitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
-                   <option value="0">Current window</option>
-                   <option value="1">New window</option>
+                   <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
+                   <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
-				<field name="spacer6" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_FEEDBURNER_FORM_LABEL" />
-						
+                
+				<field name="spacer8" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_FEEDBURNER_FORM_LABEL" />
 				<field name="mail_form" type="radio" default="0" label="MOD_ITPSUBSCRIBE_MAIL_FORM" description="MOD_ITPSUBSCRIBE_MAIL_FORM_DESC" >
-				   <option value="0">Hide</option>
-				   <option value="1">Show</option>
+				   <option value="0">JHIDE</option>
+				   <option value="1">JSHOW</option>
 				</field>
 				<field name="feedburner_uri" size="100" type="text" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_URI" description="MOD_ITPSUBSCRIBE_FEEDBURNER_URI_DESC" />
 				<field name="feedburner_style" type="textarea" default="border:1px solid #ccc;padding:3px;text-align:center;" label="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE" description="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE_DESC" cols="50" rows="3" filter="raw"/>
 				<field name="feedburner_iw" size="100" type="text" default="140" label="MOD_ITPSUBSCRIBE_FEEDBURNER_IW" description="MOD_ITPSUBSCRIBE_FEEDBURNER_IW_DESC" />
-				<field name="feedburner_bn" size="100" type="text" default="Subscribe" label="MOD_ITPSUBSCRIBE_FEEDBURNER_BN" description="MOD_ITPSUBSCRIBE_FEEDBURNER_BN_DESC" />
+				<field name="feedburner_bn" size="100" type="text" default="MOD_ITPSUBSCRIBE_SUBSCRIBE_DEFAILT" label="MOD_ITPSUBSCRIBE_FEEDBURNER_BN" description="MOD_ITPSUBSCRIBE_FEEDBURNER_BN_DESC" />
 				<field name="feedburner_l" type="list" default="en_US" label="MOD_ITPSUBSCRIBE_LANGUAGE" description="MOD_ITPSUBSCRIBE_LANGUAGE_DESC">
 					<option value="en_US">English</option>
 					<option value="es_ES">Español</option>
@@ -316,10 +329,10 @@
                 <field name="cache_time" type="text" default="900"
                     label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
                     
-                <field name="spacer7" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_LABEL" />
+                <field name="spacer9" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_LABEL" />
                 <field name="eform" type="textarea" default="" label="Extra form" description="MOD_ITPSUBSCRIBE_EXTRA_FORM_DESC" cols="50" rows="10" filter="raw" />
                 
-                <field name="spacer8" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_BUTTONS_LABEL" />
+                <field name="spacer10" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_BUTTONS_LABEL" />
                 
                 <field name="ebuttons1" type="textarea" default="" label="Button code 1" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
                 <field name="ebuttons2" type="textarea" default="" label="Button code 2" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />

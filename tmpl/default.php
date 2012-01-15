@@ -10,6 +10,7 @@ defined('_JEXEC') or die;?>
     <input type="hidden" name="loc" value="<?php echo $params->get("feedburner_l");?>" />
     <input type="submit" class="button" value="<?php echo $params->get("feedburner_bn");?>" />
 </form>
+<div style="clear:both;">&nbsp;</div>
 <?php }?>
 
 <?php if($params->get("eform", "")){?>
@@ -40,6 +41,12 @@ switch ( $style ) {
             </a>
         <?php }?>
         
+        <?php if ( $params->get('show_google') ) {?>
+            <a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?> >
+            <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $params->get('google_title'); ?>" title="<?php echo $params->get('google_title'); ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/google.png"/>
+            </a>
+        <?php }?>
+        
 		<?php if ( $params->get('show_twitter') ) {?>  
 	        <a href="<?php echo $params->get('twitter_url'); ?>" <?php if($params->get('twitter_open_new')) { echo 'target="_blank"';}?> >
 	        <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $params->get('twitter_title'); ?>" title="<?php echo $params->get('twitter_title'); ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/twitter.png"/>
@@ -52,7 +59,6 @@ switch ( $style ) {
             </a>
         <?php }?>
     
-
     <?php break; ?>
     
 	    <?php default: // SMALL ?>
@@ -83,6 +89,15 @@ switch ( $style ) {
             <a href="<?php echo $params->get('facebook_url'); ?>" <?php if($params->get('facebook_open_new')) { echo 'target="_blank"';}?>><?php echo $params->get('facebook_title'); ?></a>
         </div>
         <?php }?>
+		
+		<?php if ( $params->get('show_google') ) {?>	
+		  <div>
+			<a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?>>
+			<img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $params->get('google_title'); ?>" src="modules/mod_itpsubscribe/images/small/google.png" width="16" height="16" />
+			</a>
+			<a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?>><?php echo $params->get('google_title'); ?></a>
+		</div>
+		<?php }?>
 		
 		<?php if ( $params->get('show_twitter') ) {?>	
 		  <div>
