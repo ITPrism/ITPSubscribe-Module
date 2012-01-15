@@ -330,7 +330,7 @@
                     label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
                     
                 <field name="spacer9" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_LABEL" />
-                <field name="eform" type="textarea" default="" label="Extra form" description="MOD_ITPSUBSCRIBE_EXTRA_FORM_DESC" cols="50" rows="10" filter="raw" />
+                <field name="eform" type="textarea" default="" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_TITLE" description="MOD_ITPSUBSCRIBE_EXTRA_FORM_DESC" cols="50" rows="10" filter="raw" />
                 
                 <field name="spacer10" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_BUTTONS_LABEL" />
                 
