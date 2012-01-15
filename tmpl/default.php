@@ -1,5 +1,5 @@
 <?php // no direct access
-defined('_JEXEC') or die('Restricted access'); ?>
+defined('_JEXEC') or die;?>
 <div id="itp-social-box<?php echo $params->get('moduleClassSfx');?>">
 
 <?php if($params->get("mail_form")){?>
@@ -10,6 +10,11 @@ defined('_JEXEC') or die('Restricted access'); ?>
     <input type="hidden" name="loc" value="<?php echo $params->get("feedburner_l");?>" />
     <input type="submit" class="button" value="<?php echo $params->get("feedburner_bn");?>" />
 </form>
+<div style="clear:both;">&nbsp;</div>
+<?php }?>
+
+<?php if($params->get("eform", "")){?>
+<?php echo $params->get("eform");?>
 <?php }?>
 
 <?php
@@ -33,6 +38,12 @@ switch ( $style ) {
         <?php if ( $params->get('show_facebook') ) {?>  
             <a href="<?php echo $params->get('facebook_url'); ?>" <?php if($params->get('facebook_open_new')) { echo 'target="_blank"';}?> >
             <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $params->get('facebook_title'); ?>" title="<?php echo $params->get('facebook_title'); ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/facebook.png"/>
+            </a>
+        <?php }?>
+        
+        <?php if ( $params->get('show_google') ) {?>
+            <a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?> >
+            <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $params->get('google_title'); ?>" title="<?php echo $params->get('google_title'); ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/google.png"/>
             </a>
         <?php }?>
         
@@ -79,6 +90,15 @@ switch ( $style ) {
         </div>
         <?php }?>
 		
+		<?php if ( $params->get('show_google') ) {?>	
+		  <div>
+			<a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?>>
+			<img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $params->get('google_title'); ?>" src="modules/mod_itpsubscribe/images/small/google.png" width="16" height="16" />
+			</a>
+			<a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?>><?php echo $params->get('google_title'); ?></a>
+		</div>
+		<?php }?>
+		
 		<?php if ( $params->get('show_twitter') ) {?>	
 		  <div>
 			<a href="<?php echo $params->get('twitter_url'); ?>" <?php if($params->get('twitter_open_new')) { echo 'target="_blank"';}?> >
@@ -98,7 +118,7 @@ if ( $params->get('show_extra_twitter') ) {
 	$extra_twitter_icon = $params->get('extra_twitter_icon');
 ?>
           <div >
-            <a href="<?php echo $params->get('extra_twitter_url'); ?>" <?php if($params->get('extratwitter_open_new')) { echo 'target="_blank"';}?>>
+            <a href="<?php echo $params->get('extra_twitter_url'); ?>" <?php if($params->get('extra_twitter_open_new')) { echo 'target="_blank"';}?>>
             <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $params->get('extra_twitter_title'); ?>" title="<?php echo $params->get('extra_twitter_title'); ?>" src="modules/mod_itpsubscribe/images/twitters/<?php echo basename($extra_twitter_icon); ?>"/>
             </a>
           </div>

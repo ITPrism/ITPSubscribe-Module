@@ -1,4 +1,4 @@
-ITPSubscribe Module for Joomla! 
+ITPSubscribe Module for Joomla! 1.5
 ==========================
 ( Version 1.6 )
 --------------------------

@@ -278,7 +278,7 @@
             <option value="twitter160.png">Twitter 160</option>
             <option value="twitter161.png">Twitter 161</option>
 		</param>
-        <param name="extratwitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+        <param name="extra_twitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
            <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
            <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
         </param>
