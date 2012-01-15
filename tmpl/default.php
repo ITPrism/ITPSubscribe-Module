@@ -119,7 +119,7 @@ if ( $params->get('show_extra_twitter') ) {
 	$extra_twitter_icon = $params->get('extra_twitter_icon');
 ?>
           <div >
-            <a href="<?php echo $params->get('extra_twitter_url'); ?>">
+            <a href="<?php echo $params->get('extra_twitter_url'); ?>" <?php if($params->get('extra_twitter_open_new')) { echo 'target="_blank"';}?>>
             <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $params->get('extra_twitter_title'); ?>" title="<?php echo $params->get('extra_twitter_title'); ?>" src="modules/mod_itpsubscribe/images/twitters/<?php echo basename($extra_twitter_icon); ?>"/>
             </a>
           </div>

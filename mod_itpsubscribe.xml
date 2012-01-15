@@ -8,7 +8,7 @@
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
 	<version>1.6</version>
-	<description><![CDATA[<p>It is <a href="http://itprism.com/free-joomla-extensions/social-subscription-buttons-module">ITPrism Subscribe module</a> for Joomla! 1.6</p><p>This module shows subscription links. The links are general or icons.</p><p>Invest in the extension improvement and <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor</a> it via SMS or PayPal.</p><p>Please, <a href="http://extensions.joomla.org/extensions/social-web/social-bookmarking/14095" target=""_blank">vote for this module</a> on Joomla! Extensions Directory!</p>]]></description>
+	<description><![CDATA[<p>It is <a href="http://itprism.com/free-joomla-extensions/social-subscription-buttons-module">ITPrism Subscribe module</a> for Joomla! 1.6</p><p>This module shows subscription links. The links are general or icons.</p><p>Invest in the extension improvement and <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor</a> it via SMS or PayPal.</p><p>Please, <a href="http://extensions.joomla.org/extensions/social-web/social-bookmarking/14095" target="_blank">vote for this module</a> on Joomla! Extensions Directory!</p>]]></description>
 	<files>
 		<filename module="mod_itpsubscribe">mod_itpsubscribe.php</filename>
 		<filename>index.html</filename>
@@ -289,7 +289,7 @@
 		            <option value="twitter160.png">Twitter 160</option>
 		            <option value="twitter161.png">Twitter 161</option>
 				</field>
-			     <field name="extratwitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
+			     <field name="extra_twitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
                    <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
                    <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
