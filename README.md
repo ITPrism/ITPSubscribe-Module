@@ -11,6 +11,7 @@ Changelog
 v1.6
 -----
 * Added a field for additional subscription form.
+* Added Google+ Icons
 * Improved the usability
 
 v1.5
