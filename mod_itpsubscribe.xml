@@ -8,7 +8,7 @@
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
 	<version>1.6</version>
-	<description><![CDATA[<p>It is <a href="http://itprism.com/free-joomla-extensions/social-subscription-buttons-module">ITPrism Subscribe module</a> for Joomla! 1.6</p><p>This module shows subscription links. The links are general or icons.</p><p>Invest in the extension improvement and <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor</a> it via SMS or PayPal.</p><p>Please, <a href="http://extensions.joomla.org/extensions/social-web/social-bookmarking/14095" target="_blank">vote for this module</a> on Joomla! Extensions Directory!</p>]]></description>
+	<description><![CDATA[<p>It is <a href="http://itprism.com/free-joomla-extensions/social-subscription-buttons-module">ITPrism Subscribe module</a> for Joomla!</p>.<p>This module shows subscription links. The links are general or icons.</p><p>Invest in the extension improvement and <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor</a> it via SMS or PayPal.</p><p>Please, <a href="http://extensions.joomla.org/extensions/social-web/social-bookmarking/14095" target="_blank">vote for this module</a> on Joomla! Extensions Directory!</p>]]></description>
 	<files>
 		<filename module="mod_itpsubscribe">mod_itpsubscribe.php</filename>
 		<filename>index.html</filename>
