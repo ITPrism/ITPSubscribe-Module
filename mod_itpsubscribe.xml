@@ -9,6 +9,12 @@
 	<authorUrl>http://itprism.com</authorUrl>
 	<version>1.7</version>
 	<description>MOD_ITPSUBSCRIBE_DESC</description>
+	
+	<languages>
+        <language tag="en-GB">en-GB.mod_itpsubscribe.ini</language>
+        <language tag="en-GB">en-GB.mod_itpsubscribe.sys.ini</language>
+    </languages>    
+    
 	<files>
 		<filename module="mod_itpsubscribe">mod_itpsubscribe.php</filename>
 		<filename>index.html</filename>
@@ -350,7 +356,4 @@
 		</fields>
 	</config>
 	
-	<languages>
-        <language tag="en-GB">en-GB.mod_itpsubscribe.ini</language>
-    </languages>    
 </extension>
