@@ -1,8 +1,7 @@
 ITPSubscribe Module for Joomla! 
 ==========================
-( Version 1.6 )
+( Version 1.7 )
 --------------------------
-
 
 
 Changelog
