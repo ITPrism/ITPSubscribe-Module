@@ -1,12 +1,16 @@
 ITPSubscribe Module for Joomla! 1.5
 ==========================
-( Version 1.6 )
+( Version 1.7 )
 --------------------------
-
 
 
 Changelog
 ---------
+
+v1.7
+-----
+* Added new kinds of icons
+* Improved
 
 v1.6
 -----

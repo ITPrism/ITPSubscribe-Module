@@ -14,7 +14,8 @@
 // no direct access
 defined('_JEXEC') or die;
 
-// Include the syndicate functions only once
 require_once (dirname(__FILE__).DS.'helper.php');
 
-require(JModuleHelper::getLayoutPath('mod_itpsubscribe'));
+$moduleClassSfx = htmlspecialchars($params->get('moduleclass_sfx'));
+
+require JModuleHelper::getLayoutPath('mod_itpsubscribe', $params->get('layout', 'default'));

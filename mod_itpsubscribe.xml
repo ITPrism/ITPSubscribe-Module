@@ -7,12 +7,13 @@
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.6</version>
-	<description>MOD_ITPSUBSCRIBE_DESC</description>
+	<version>1.7</version>
+	<description>MOD_ITPSUBSCRIBE_XML_DESCRIPTION</description>
 	<files>
 		<filename module="mod_itpsubscribe">mod_itpsubscribe.php</filename>
 		<filename>index.html</filename>
 		<filename>helper.php</filename>
+		<filename>README.md</filename>
 		<filename>tmpl/default.php</filename>
 		<filename>tmpl/index.html</filename>
 		<folder>images</folder>
@@ -46,6 +47,11 @@
 		   <option value="big22">Big22 - 62px</option>
 		   <option value="big23">Big23 - 64px</option>
 		   <option value="big24">Big24 - 60px</option>
+		   <option value="big25">Big25 - 64px</option>
+           <option value="big26">Big26 - 56px</option>
+           <option value="big27">Big27 - 56px</option>
+           <option value="big28">Big28 - 94px</option>
+           <option value="big29">Big29 - 60px</option>
 		</param>
 		
 		<param name="@spacer2" type="spacer" default="MOD_ITPSUBSCRIBE_RSS_LABEL" label="" description="" />
@@ -53,8 +59,8 @@
 		   <option value="0">JHIDE</option>
 		   <option value="1">JSHOW</option>
 		</param>
-		<param name="rss_title" type="text" default="Subscribe in a reader" size="100" label="MOD_ITPSUBSCRIBE_RSS_TITLE" description="MOD_ITPSUBSCRIBE_RSS_TITLE_DESC" />
-		<param name="rss_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_RSS_LINK" description="MOD_ITPSUBSCRIBE_RSS_LINK_DESC" />
+		<param name="rss_title" type="text" default="Subscribe in a reader" size="80" label="MOD_ITPSUBSCRIBE_RSS_TITLE" description="MOD_ITPSUBSCRIBE_RSS_TITLE_DESC" />
+		<param name="rss_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_RSS_LINK" description="MOD_ITPSUBSCRIBE_RSS_LINK_DESC" />
 		<param name="rss_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
            <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
            <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
@@ -65,8 +71,8 @@
            <option value="0">JHIDE</option>
            <option value="1">JSHOW</option>
         </param>
-        <param name="facebook_title" type="text" default="Facebok page" size="100" label="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE" description="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE_DESC" />
-        <param name="facebook_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_FACEBOOK_ADDRESS" description="MOD_ITPSUBSCRIBE_FACEBOOK_ADDRESS_DESC" />
+        <param name="facebook_title" type="text" default="Facebok page" size="80" label="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE" description="MOD_ITPSUBSCRIBE_FACEBOOK_TITLE_DESC" />
+        <param name="facebook_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_FACEBOOK_ADDRESS" description="MOD_ITPSUBSCRIBE_FACEBOOK_ADDRESS_DESC" />
 		<param name="facebook_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
            <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
            <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
@@ -77,8 +83,8 @@
 		   <option value="0">JHIDE</option>
 		   <option value="1">JSHOW</option>
 		</param>
-		<param name="twitter_title" type="text" default="Follow me" size="100" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_TITLE_DESC" />
-		<param name="twitter_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_TWITTER_URL" description="MOD_ITPSUBSCRIBE_TWITTER_URL_DESC" />
+		<param name="twitter_title" type="text" default="Follow me" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_TITLE_DESC" />
+		<param name="twitter_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_URL" description="MOD_ITPSUBSCRIBE_TWITTER_URL_DESC" />
 		<param name="twitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
            <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
            <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
@@ -89,8 +95,8 @@
            <option value="0">JHIDE</option>
            <option value="1">JSHOW</option>
         </param>
-        <param name="email_title" type="text" default="Subscribe by E-Mail" size="100" label="MOD_ITPSUBSCRIBE_EMAIL_TITLE" description="MOD_ITPSUBSCRIBE_EMAIL_TITLE_DESC" />
-        <param name="email_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_EMAIL_ADDRESS" description="MOD_ITPSUBSCRIBE_EMAIL_ADDRESS_DESC" />
+        <param name="email_title" type="text" default="Subscribe by E-Mail" size="80" label="MOD_ITPSUBSCRIBE_EMAIL_TITLE" description="MOD_ITPSUBSCRIBE_EMAIL_TITLE_DESC" />
+        <param name="email_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_EMAIL_ADDRESS" description="MOD_ITPSUBSCRIBE_EMAIL_ADDRESS_DESC" />
         <param name="email_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
            <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
            <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
@@ -101,8 +107,8 @@
            <option value="0">JHIDE</option>
            <option value="1">JSHOW</option>
         </param>
-        <param name="google_title" type="text" default="Google+ page" size="100" label="MOD_ITPSUBSCRIBE_GOOGLE_TITLE" description="MOD_ITPSUBSCRIBE_GOOGLE_TITLE_DESC" />
-        <param name="google_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_GOOGLE_ADDRESS" description="MOD_ITPSUBSCRIBE_GOOGLE_ADDRESS_DESC" />
+        <param name="google_title" type="text" default="Google+ page" size="80" label="MOD_ITPSUBSCRIBE_GOOGLE_TITLE" description="MOD_ITPSUBSCRIBE_GOOGLE_TITLE_DESC" />
+        <param name="google_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_GOOGLE_ADDRESS" description="MOD_ITPSUBSCRIBE_GOOGLE_ADDRESS_DESC" />
         <param name="google_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
            <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
            <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
@@ -113,8 +119,8 @@
 		   <option value="0">JHIDE</option>
 		   <option value="1">JSHOW</option>
 		</param>
-		<param name="extra_twitter_title" type="text" default="Follow me" size="100" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_TITLE_DESC" />
-		<param name="extra_twitter_url" type="text" default="" size="100" label="MOD_ITPSUBSCRIBE_TWITTER_URL" description="MOD_ITPSUBSCRIBE_TWITTER_URL_DESC" />
+		<param name="extra_twitter_title" type="text" default="Follow me" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_TITLE_DESC" />
+		<param name="extra_twitter_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_URL" description="MOD_ITPSUBSCRIBE_TWITTER_URL_DESC" />
 		<param name="extra_twitter_icon" type="list" default="twitter28.png" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_ICONS" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_ICONS_DESC" >
 			<option value="twitter01.png">Twitter 01</option>
 			<option value="twitter02.png">Twitter 02</option>
@@ -288,26 +294,27 @@
            <option value="0">JHIDE</option>
            <option value="1">JSHOW</option>
         </param>
-        <param name="feedburner_uri" size="100" type="text" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_URI" description="MOD_ITPSUBSCRIBE_FEEDBURNER_URI_DESC" />
-        <param name="feedburner_style" size="100" type="textarea" default="border:1px solid #ccc;padding:3px;text-align:center;" label="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE" description="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE_DESC" cols="50" rows="3" filter="raw"/>
-        <param name="feedburner_iw" size="100" type="text" default="140" label="MOD_ITPSUBSCRIBE_FEEDBURNER_IW" description="MOD_ITPSUBSCRIBE_FEEDBURNER_IW_DESC" />
-        <param name="feedburner_bn" size="100" type="text" default="Subscribe" label="MOD_ITPSUBSCRIBE_FEEDBURNER_BN" description="MOD_ITPSUBSCRIBE_FEEDBURNER_BN_DESC" />
-        <param name="feedburner_l" size="100" type="list" default="en_US" label="MOD_ITPSUBSCRIBE_LANGUAGE" description="MOD_ITPSUBSCRIBE_LANGUAGE_DESC">
-            <option value="en_US">English</option>
-            <option value="es_ES">Español</option>
-            <option value="fr_FR">Français</option>
-            <option value="de_DE">Deutsch</option>
-            <option value="pt_BR">Português</option>
-            <option value="ru_RU">русский язык</option>
+        <param name="feedburner_uri" size="80" type="text" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_URI" description="MOD_ITPSUBSCRIBE_FEEDBURNER_URI_DESC" />
+        <param name="feedburner_style" size="80" type="textarea" default="border:1px solid #ccc;padding:3px;text-align:center;" label="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE" description="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE_DESC" cols="50" rows="3" filter="raw"/>
+        <param name="feedburner_iw" size="80" type="text" default="140" label="MOD_ITPSUBSCRIBE_FEEDBURNER_IW" description="MOD_ITPSUBSCRIBE_FEEDBURNER_IW_DESC" />
+        <param name="feedburner_bn" size="80" type="text" default="Subscribe" label="MOD_ITPSUBSCRIBE_FEEDBURNER_BN" description="MOD_ITPSUBSCRIBE_FEEDBURNER_BN_DESC" />
+        <param name="feedburner_l" size="80" type="list" default="en_US" label="MOD_ITPSUBSCRIBE_LANGUAGE" description="MOD_ITPSUBSCRIBE_LANGUAGE_DESC">
+            <option value="en_US">MOD_ITPSUBSCRIBE_ENGLISH</option>
+            <option value="es_ES">MOD_ITPSUBSCRIBE_SPANISH</option>
+            <option value="fr_FR">MOD_ITPSUBSCRIBE_FRENCH</option>
+            <option value="de_DE">MOD_ITPSUBSCRIBE_GERMAN</option>
+            <option value="pt_BR">MOD_ITPSUBSCRIBE_PORTUGUESE</option>
+            <option value="ru_RU">MOD_ITPSUBSCRIBE_RUSSIAN</option>
+            <option value="ja_JP">MOD_ITPSUBSCRIBE_JAPANESE</option>
         </param>
         <param name="header_text" type="textarea" rows="3" cols="40" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_HT" description="MOD_ITPSUBSCRIBE_FEEDBURNER_HT_DESC" />
 	</params>
 
     <params group="advanced">
-        <param name="moduleclass_sfx" type="text" default="" size="100" label="MODULE_CSS_SUFFIX" description="MODULE_CSS_SUFFIX_DESC" />
+        <param name="moduleclass_sfx" type="text" default="" size="80" label="MODULE_CSS_SUFFIX" description="MODULE_CSS_SUFFIX_DESC" />
         <param name="cache" type="list" default="0" label="CACHING" description="CACHING_DESC">
-            <option value="1">Use global</option>
-            <option value="0">No caching</option>
+            <option value="1">MOD_ITPSUBSCRIBE_USE_GLOBAL</option>
+            <option value="0">MOD_ITPSUBSCRIBE_NO_CACHING</option>
         </param>
         
         <param name="@spacer9" type="spacer" default="MOD_ITPSUBSCRIBE_EXTRA_FORM_LABEL" label="" description="" />
@@ -315,11 +322,11 @@
                 
         <param name="@spacer10" type="spacer" default="MOD_ITPSUBSCRIBE_EXTRA_BUTTONS_LABEL" label="" description="" />
         <param name="cache_time" type="text" default="900" label="CACHING_TIME" description="CACHING_TIME_DESC" />
-        <param name="ebuttons1" type="textarea" default="" label="Button code 1" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-        <param name="ebuttons2" type="textarea" default="" label="Button code 2" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-        <param name="ebuttons3" type="textarea" default="" label="Button code 3" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-        <param name="ebuttons4" type="textarea" default="" label="Button code 4" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-        <param name="ebuttons5" type="textarea" default="" label="Button code 5" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+        <param name="ebuttons1" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+        <param name="ebuttons2" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+        <param name="ebuttons3" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+        <param name="ebuttons4" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+        <param name="ebuttons5" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
     </params>
 	
 	<languages>
