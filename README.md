@@ -8,6 +8,11 @@ ITPSubscribe Module for Joomla!
 Changelog
 ---------
 
+v1.7
+-----
+* Added new kinds of icons
+* Improved
+
 v1.6
 -----
 * Added a field for additional subscription form.
