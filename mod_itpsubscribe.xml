@@ -8,7 +8,12 @@
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
 	<version>1.7</version>
-	<description>MOD_ITPSUBSCRIBE_XML_DESCRIPTION</description>
+	<description><![CDATA[
+	<p><a href='http://itprism.com/free-joomla-extensions/social-marketing-seo/profile-newsletter-subscription'>ITPrism Subscribe module</a> adds subscription form and links of your social profiles on your website. The links can be icons or general in plain text.</p>
+	<p>Invest in the extension and help for its improvement. You can <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor the extension via SMS or PayPal</a>.</p>
+	<p><a href='http://itprism.com/' target='_blank'>Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+	<p>Please, <a href='http://extensions.joomla.org/extensions/social-web/social-bookmarking/14095' target='_blank'>vote for this module</a> on Joomla! Extensions Directory!</p>
+    ]]></description>
 	
 	<languages>
         <language tag="en-GB">en-GB.mod_itpsubscribe.ini</language>
@@ -314,7 +319,7 @@
 				<field name="feedburner_uri" size="80" type="text" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_URI" description="MOD_ITPSUBSCRIBE_FEEDBURNER_URI_DESC" />
 				<field name="feedburner_style" type="textarea" default="border:1px solid #ccc;padding:3px;text-align:center;" label="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE" description="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE_DESC" cols="50" rows="3" filter="raw"/>
 				<field name="feedburner_iw" size="80" type="text" default="140" label="MOD_ITPSUBSCRIBE_FEEDBURNER_IW" description="MOD_ITPSUBSCRIBE_FEEDBURNER_IW_DESC" />
-				<field name="feedburner_bn" size="80" type="text" default="MOD_ITPSUBSCRIBE_SUBSCRIBE_DEFAILT" label="MOD_ITPSUBSCRIBE_FEEDBURNER_BN" description="MOD_ITPSUBSCRIBE_FEEDBURNER_BN_DESC" />
+				<field name="feedburner_bn" size="80" type="text" default="Subscribe" label="MOD_ITPSUBSCRIBE_FEEDBURNER_BN" description="MOD_ITPSUBSCRIBE_FEEDBURNER_BN_DESC" />
 				<field name="feedburner_l" type="list" default="en_US" label="MOD_ITPSUBSCRIBE_LANGUAGE" description="MOD_ITPSUBSCRIBE_LANGUAGE_DESC">
 					<option value="en_US">MOD_ITPSUBSCRIBE_ENGLISH</option>
 					<option value="es_ES">MOD_ITPSUBSCRIBE_SPANISH</option>
