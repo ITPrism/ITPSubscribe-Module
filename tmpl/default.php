@@ -41,33 +41,23 @@ switch ( $style ) {
 	case "big" :?>
 	
 	   <?php if ( $params->get('show_rss') ) {?>
-            <a type="application/rss+xml" rel="alternate" href="<?php echo $params->get('rss_url'); ?>" <?php if($params->get('rss_open_new')) { echo 'target="_blank"';}?>>
-            <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $rssTitle; ?>" title="<?php echo $rssTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/rss.png"/>
-            </a>
+            <a type="application/rss+xml" rel="alternate" href="<?php echo $params->get('rss_url'); ?>" <?php if($params->get('rss_open_new')) { echo 'target="_blank"';}?>><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $rssTitle; ?>" title="<?php echo $rssTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/rss.png"/></a>
         <?php }?>
         
         <?php if ( $params->get('show_facebook') ) {?>  
-            <a href="<?php echo $params->get('facebook_url'); ?>" <?php if($params->get('facebook_open_new')) { echo 'target="_blank"';}?>>
-            <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $facebookTitle; ?>" title="<?php echo $facebookTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/facebook.png"/>
-            </a>
+            <a href="<?php echo $params->get('facebook_url'); ?>" <?php if($params->get('facebook_open_new')) { echo 'target="_blank"';}?>><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $facebookTitle; ?>" title="<?php echo $facebookTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/facebook.png"/></a>
         <?php }?>
         
         <?php if ( $params->get('show_google') ) {?>
-            <a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?> >
-            <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $googleTitle; ?>" title="<?php echo $googleTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/google.png"/>
-            </a>
+            <a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?> ><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $googleTitle; ?>" title="<?php echo $googleTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/google.png"/></a>
         <?php }?>
         
 		<?php if ( $params->get('show_twitter') ) {?>  
-	        <a href="<?php echo $params->get('twitter_url'); ?>" <?php if($params->get('twitter_open_new')) { echo 'target="_blank"';}?> >
-	        <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $twitterTitle; ?>" title="<?php echo $twitterTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/twitter.png"/>
-	        </a>
+	        <a href="<?php echo $params->get('twitter_url'); ?>" <?php if($params->get('twitter_open_new')) { echo 'target="_blank"';}?> ><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $twitterTitle; ?>" title="<?php echo $twitterTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/twitter.png"/></a>
 	    <?php }?>
 	    
 	    <?php if ( $params->get('show_email') ) {?>
-            <a href="<?php echo $params->get('email_url'); ?>" <?php if($params->get('email_open_new')) { echo 'target="_blank"';}?> >
-            <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $emailTitle; ?>" title="<?php echo $emailTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/email.png"/>
-            </a>
+            <a href="<?php echo $params->get('email_url'); ?>" <?php if($params->get('email_open_new')) { echo 'target="_blank"';}?> ><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $emailTitle; ?>" title="<?php echo $emailTitle; ?>" src="modules/mod_itpsubscribe/images/<?php echo basename( $dir ); ?>/email.png"/></a>
         <?php }?>
     
     <?php break; ?>
@@ -76,45 +66,35 @@ switch ( $style ) {
 	    
 	    <?php if ( $params->get('show_rss') ) {?>
 	       <div>
-		    <a type="application/rss+xml" rel="alternate" href="<?php echo $params->get('rss_url'); ?>" <?php if($params->get('rss_open_new')) { echo 'target="_blank"';}?>>
-		    <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $rssTitle; ?>" src="modules/mod_itpsubscribe/images/small/rss.png" width="16" height="16" />
-			</a>
+		    <a type="application/rss+xml" rel="alternate" href="<?php echo $params->get('rss_url'); ?>" <?php if($params->get('rss_open_new')) { echo 'target="_blank"';}?>><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $rssTitle; ?>" src="modules/mod_itpsubscribe/images/small/rss.png" width="16" height="16" /></a>
 			<a type="application/rss+xml" rel="alternate" href="<?php echo $params->get('rss_url'); ?>" <?php if($params->get('rss_open_new')) { echo 'target="_blank"';}?>><?php echo $rssTitle; ?></a>
 		  </div>
 	    <?php }?>
 	    
 	    <?php if ( $params->get('show_email') ) {?>
 	       <div>
-			<a href="<?php echo $params->get('email_url'); ?>" <?php if($params->get('email_open_new')) { echo 'target="_blank"';}?>>
-			<img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $emailTitle; ?>" src="modules/mod_itpsubscribe/images/small/email.png" width="16" height="16" />
-			</a>
+			<a href="<?php echo $params->get('email_url'); ?>" <?php if($params->get('email_open_new')) { echo 'target="_blank"';}?>><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $emailTitle; ?>" src="modules/mod_itpsubscribe/images/small/email.png" width="16" height="16" /></a>
 			<a href="<?php echo $params->get('email_url'); ?>" <?php if($params->get('email_open_new')) { echo 'target="_blank"';}?>><?php echo $emailTitle; ?></a>
 		  </div>
 		<?php }?>
 		
 		<?php if ( $params->get('show_facebook') ) {?> 
           <div>
-            <a href="<?php echo $params->get('facebook_url'); ?>" <?php if($params->get('facebook_open_new')) { echo 'target="_blank"';}?>>
-            <img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $facebookTitle; ?>" src="modules/mod_itpsubscribe/images/small/facebook.png" width="16" height="16" />
-            </a>
+            <a href="<?php echo $params->get('facebook_url'); ?>" <?php if($params->get('facebook_open_new')) { echo 'target="_blank"';}?>><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $facebookTitle; ?>" src="modules/mod_itpsubscribe/images/small/facebook.png" width="16" height="16" /></a>
             <a href="<?php echo $params->get('facebook_url'); ?>" <?php if($params->get('facebook_open_new')) { echo 'target="_blank"';}?>><?php echo $facebookTitle; ?></a>
         </div>
         <?php }?>
 		
 		<?php if ( $params->get('show_google') ) {?>	
 		  <div>
-			<a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?>>
-			<img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $googleTitle; ?>" src="modules/mod_itpsubscribe/images/small/google.png" width="16" height="16" />
-			</a>
+			<a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?>><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $googleTitle; ?>" src="modules/mod_itpsubscribe/images/small/google.png" width="16" height="16" /></a>
 			<a href="<?php echo $params->get('google_url'); ?>" <?php if($params->get('google_open_new')) { echo 'target="_blank"';}?>><?php echo $googleTitle; ?></a>
 		</div>
 		<?php }?>
 		
 		<?php if ( $params->get('show_twitter') ) {?>	
 		  <div>
-			<a href="<?php echo $params->get('twitter_url'); ?>" <?php if($params->get('twitter_open_new')) { echo 'target="_blank"';}?>>
-			<img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $twitterTitle; ?>" src="modules/mod_itpsubscribe/images/small/twitter.png" width="16" height="16" />
-			</a>
+			<a href="<?php echo $params->get('twitter_url'); ?>" <?php if($params->get('twitter_open_new')) { echo 'target="_blank"';}?>><img style="border: 0pt none ; vertical-align: middle; " alt="<?php echo $twitterTitle; ?>" src="modules/mod_itpsubscribe/images/small/twitter.png" width="16" height="16" /></a>
 			<a href="<?php echo $params->get('twitter_url'); ?>" <?php if($params->get('twitter_open_new')) { echo 'target="_blank"';}?>><?php echo $twitterTitle; ?></a>
 		</div>
 		<?php }?>
