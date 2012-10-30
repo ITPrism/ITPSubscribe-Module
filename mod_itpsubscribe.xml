@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="2.5" client="site" method="upgrade">
-	<name>ITPSubscribe</name>
+	<name>MOD_ITPSUBSCRIBE</name>
 	<author>Todor Iliev</author>
-	<creationDate>January, 2010</creationDate>
 	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.7</version>
-	<description><![CDATA[
-	<p><a href='http://itprism.com/free-joomla-extensions/social-marketing-seo/profile-newsletter-subscription'>ITPrism Subscribe module</a> adds subscription form and links of your social profiles on your website. The links can be icons or general in plain text.</p>
-	<p>Invest in the extension and help for its improvement. You can <a href="http://itprism.com/sponsorship" title="Sponsoring" target="_blank">sponsor the extension via SMS or PayPal</a>.</p>
-	<p><a href='http://itprism.com/' target='_blank'>Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
-	<p>Please, <a href='http://extensions.joomla.org/extensions/social-web/social-bookmarking/14095' target='_blank'>vote for this module</a> on Joomla! Extensions Directory!</p>
-    ]]></description>
+	<version>1.8</version>
+	<creationDate>30 October, 2012</creationDate>
+	<description>MOD_ITPSUBSCRIBE_XML_DESCRIPTION</description>
 	
-	<languages>
-        <language tag="en-GB">en-GB.mod_itpsubscribe.ini</language>
-        <language tag="en-GB">en-GB.mod_itpsubscribe.sys.ini</language>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_itpsubscribe.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_itpsubscribe.sys.ini</language>
     </languages>    
     
 	<files>
@@ -28,6 +23,8 @@
 		<folder>tmpl</folder>
 		<folder>images</folder>
 	</files>
+
+    <help url="MOD_ITPSUBSCRIBE_HELP_URL"/>
 
 	<config>
 		<fields name="params">
@@ -140,7 +137,7 @@
 				   <option value="1">JSHOW</option>
 				</field>
 				
-				<field name="extra_twitter_title" type="text" default="Follow me" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_TITLE_DESC" />
+				<field name="extra_twitter_title" type="text" default="Follow me" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_TITLE" description="MOD_ITPSUBSCRIBE_TWITTER_EXTRA_TITLE_DESC" />
 				<field name="extra_twitter_url" type="text" default="" size="80" label="MOD_ITPSUBSCRIBE_TWITTER_URL" description="MOD_ITPSUBSCRIBE_TWITTER_URL_DESC" />
 				
 				<field name="extra_twitter_icon" type="list" default="twitter28.png" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_ICONS" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_ICONS_DESC" >
@@ -332,32 +329,36 @@
 				<field name="header_text" type="textarea" rows="3" cols="40" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_HT" description="MOD_ITPSUBSCRIBE_FEEDBURNER_HT_DESC" />
 		</fieldset>
 
-			<fieldset name="advanced">
-				<field name="moduleclass_sfx" type="text"
-                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+        <fieldset name="additional_buttons_code" label="MOD_ITPSUBSCRIBE_EXTRA_BUTTONS_LABEL">
+        
+            <field name="ebuttons1" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+            <field name="ebuttons2" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+            <field name="ebuttons3" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+            <field name="ebuttons4" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+            <field name="ebuttons5" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+               
+        </fieldset>
+        
+        <fieldset name="additional_form_code" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_LABEL">
+            <field name="eform" type="textarea" default="" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_TITLE" description="MOD_ITPSUBSCRIBE_EXTRA_FORM_DESC" cols="50" rows="10" filter="raw" />
+        </fieldset>
+        
+		<fieldset name="advanced">
+			<field name="moduleclass_sfx" type="text"
+                   label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                   description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 
-                <field name="owncache" type="list" default="1"
-                    label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" >
-                    <option value="1">JGLOBAL_USE_GLOBAL</option>
-                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
-                    </option>
-                </field>
+               <field name="owncache" type="list" default="1"
+                   label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" >
+                   <option value="1">JGLOBAL_USE_GLOBAL</option>
+                   <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+                   </option>
+               </field>
 
-                <field name="cache_time" type="text" default="900"
-                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
-                    
-                <field name="spacer9" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_LABEL" />
-                <field name="eform" type="textarea" default="" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_TITLE" description="MOD_ITPSUBSCRIBE_EXTRA_FORM_DESC" cols="50" rows="10" filter="raw" />
-                
-                <field name="spacer10" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_BUTTONS_LABEL" />
-                
-                <field name="ebuttons1" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-                <field name="ebuttons2" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-                <field name="ebuttons3" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-                <field name="ebuttons4" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-                <field name="ebuttons5" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-			</fieldset>
+               <field name="cache_time" type="text" default="900"
+                   label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+               
+		</fieldset>
 		</fields>
 	</config>
 	
