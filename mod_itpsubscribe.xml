@@ -6,8 +6,8 @@
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.8</version>
-	<creationDate>30 October, 2012</creationDate>
+	<version>1.9</version>
+	<creationDate>27 April, 2013</creationDate>
 	<description>MOD_ITPSUBSCRIBE_XML_DESCRIPTION</description>
 	
 	<languages folder="language">
@@ -62,6 +62,11 @@
 		           <option value="big27">Big27 - 56px</option>
 		           <option value="big28">Big28 - 94px</option>
 		           <option value="big29">Big29 - 60px</option>
+		           <option value="big30">Big30 - 64px</option>
+		           <option value="big31">Big31 - 32px</option>
+		           <option value="big32">Big32 - 64px</option>
+		           <option value="big33">Big33 - 56px</option>
+		           <option value="big34">Big34 - 56px</option>
 				</field>
 				
 				<field name="spacer2" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_RSS_LABEL" />
@@ -302,6 +307,10 @@
 		            <option value="twitter159.png">Twitter 159</option>
 		            <option value="twitter160.png">Twitter 160</option>
 		            <option value="twitter161.png">Twitter 161</option>
+		            <option value="twitter162.png">Twitter 162</option>
+		            <option value="twitter163.png">Twitter 163</option>
+		            <option value="twitter164.png">Twitter 164</option>
+		            <option value="twitter165.png">Twitter 165</option>
 				</field>
 			     <field name="extra_twitter_open_new" type="list" default="0" label="MOD_ITPSUBSCRIBE_OPEN_NEW" description="MOD_ITPSUBSCRIBE_OPEN_NEW_DESC" >
                    <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
@@ -348,15 +357,30 @@
                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 
-               <field name="owncache" type="list" default="1"
-                   label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC" >
-                   <option value="1">JGLOBAL_USE_GLOBAL</option>
-                   <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
-                   </option>
+             <field
+                 name="cache"
+                 type="list"
+                 default="1"
+                 label="COM_MODULES_FIELD_CACHING_LABEL"
+                 description="COM_MODULES_FIELD_CACHING_DESC">
+                 <option
+                     value="1">JGLOBAL_USE_GLOBAL</option>
+                 <option
+                     value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+             </field>
+             <field
+                 name="cache_time"
+                 type="text"
+                 default="900"
+                 label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                 description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+             <field
+                 name="cachemode"
+                 type="hidden"
+                 default="static">
+                 <option
+                     value="static"></option>
                </field>
-
-               <field name="cache_time" type="text" default="900"
-                   label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
                
 		</fieldset>
 		</fields>

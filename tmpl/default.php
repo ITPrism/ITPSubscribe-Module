@@ -12,7 +12,8 @@
  */
 
 // no direct access
-defined('_JEXEC') or die;?>
+defined('_JEXEC') or die;
+?>
 <?php if($params->get("mail_form")){?>
 <form style="<?php echo $params->get("feedburner_style");?>" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=<?php echo $params->get("feedburner_uri");?>', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
     <p style="text-align:left;"><?php echo $headText;?></p>

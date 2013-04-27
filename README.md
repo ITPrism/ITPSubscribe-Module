@@ -7,6 +7,11 @@ ITPSubscribe Module for Joomla!
 Changelog
 ---------
 
+v1.9
+-----
+* Added new sets of icons
+* Added new twitter icons
+
 v1.8
 -----
 * Improved the multilanguage 
