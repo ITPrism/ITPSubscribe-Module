@@ -31,7 +31,7 @@
 			<fieldset name="basic">
 						
 			    <field name="spacer1" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_ICONS_LABEL" />
-				<field name="style" type="list" default="small" label="MOD_ITPSUBSCRIBE_RSS_EMAIL_STYLES" description="MOD_ITPSUBSCRIBE_RSS_EMAIL_STYLES_DESC" >
+				<field name="icons_set" type="list" default="small" label="MOD_ITPSUBSCRIBE_RSS_EMAIL_STYLES" description="MOD_ITPSUBSCRIBE_RSS_EMAIL_STYLES_DESC" >
 				   <option value="small">Small</option>
 				   <option value="big1">Big1 - 64px</option>
 				   <option value="big2">Big2 - 62px</option>

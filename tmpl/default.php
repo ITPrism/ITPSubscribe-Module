@@ -30,7 +30,7 @@ defined('_JEXEC') or die;
 <?php }?>
 
 <?php
-$style = $params->get('style'); 
+$style = $params->get('icons_set'); 
 
 if ( false !== strpos( $style, "big" ) ) {
 	$dir = $style;
