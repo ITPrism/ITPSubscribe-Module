@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5" client="site" method="upgrade">
+<extension type="module" version="3.1" client="site" method="upgrade">
 	<name>MOD_ITPSUBSCRIBE</name>
 	<author>Todor Iliev</author>
-	<copyright>Copyright (C) 2010 Todor Iliev ( ITPrism.com )</copyright>
+	<copyright>Copyright (C) 2013 Todor Iliev ( ITPrism.com )</copyright>
 	<license>http://www.gnu.org/copyleft/gpl.html</license>
 	<authorEmail>todor@itprism.com</authorEmail>
 	<authorUrl>http://itprism.com</authorUrl>
-	<version>1.9</version>
-	<creationDate>27 April, 2013</creationDate>
-	<description>MOD_ITPSUBSCRIBE_XML_DESCRIPTION</description>
+	<version>1.10</version>
+	<creationDate>22 October, 2013</creationDate>
+	<description><![CDATA[
+    <p><a href='http://itprism.com/free-joomla-extensions/social-marketing-seo/profile-newsletter-subscription' target="_blank">ITPSubscribe</a> adds subscription form and links to your social profiles on your website. The links can be icons or general in plain text.</p>
+    <p><a href='http://itprism.com/help/33-subscribe-documentation-faq' target='_blank'>Read documentation</a> that will help you to setup the extensions.</p>
+    <p>Invest in the extension and help for its improvement. You can <a href="http://itprism.com/sponsorship" target="_blank">sponsor the extension via SMS, PayPal or Bitcoin</a>.</p>
+    <p><a href='http://itprism.com/' target='_blank'>Subscribe for the newsletter</a> to receive information about updates and new ITPrism extensions.</p>
+    <p>Please, <a href='http://extensions.joomla.org/extensions/social-web/social-presence/social-profiles/14095' target='_blank'>vote for this module</a> on Joomla! Extensions Directory!</p>
+    ]]></description>
 	
 	<languages folder="language">
         <language tag="en-GB">en-GB/en-GB.mod_itpsubscribe.ini</language>
@@ -29,9 +35,7 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-						
-			    <field name="spacer1" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_ICONS_LABEL" />
-				<field name="icons_set" type="list" default="small" label="MOD_ITPSUBSCRIBE_RSS_EMAIL_STYLES" description="MOD_ITPSUBSCRIBE_RSS_EMAIL_STYLES_DESC" >
+				<field name="icons_set" type="list" default="small" label="MOD_ITPSUBSCRIBE_ICONS_SET" description="MOD_ITPSUBSCRIBE_ICONS_SET_DESC" >
 				   <option value="small">Small</option>
 				   <option value="big1">Big1 - 64px</option>
 				   <option value="big2">Big2 - 62px</option>
@@ -68,10 +72,10 @@
 		           <option value="big33">Big33 - 56px</option>
 		           <option value="big34">Big34 - 56px</option>
 				</field>
-				
-				<field name="spacer2" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_RSS_LABEL" />
-				
-				<field name="show_rss" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_RSS" description="MOD_ITPSUBSCRIBE_SHOW_RSS_DESC" >
+			</fieldset>
+            
+			<fieldset name="rss_options" label="MOD_ITPSUBSCRIBE_RSS_ICON_LABEL" description="MOD_ITPSUBSCRIBE_RSS_ICON_DESC">
+				<field name="show_rss" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_RSS" description="MOD_ITPSUBSCRIBE_SHOW_RSS_DESC" class="btn-group">
 				   <option value="0">JHIDE</option>
 				   <option value="1">JSHOW</option>
 				</field>
@@ -81,10 +85,11 @@
 		           <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
 		           <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
 		        </field>
-		        
-				<field name="spacer3" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_FACEBOOK_LABEL" />
+	        </fieldset>
+            
+            <fieldset name="facebook_options" label="MOD_ITPSUBSCRIBE_FACEBOOK_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_FACEBOOK_OPTIONS_DESC">
 						
-				<field name="show_facebook" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_FACEBOOK" description="MOD_ITPSUBSCRIBE_SHOW_FACEBOOK_DESC" >
+				<field name="show_facebook" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_FACEBOOK" description="MOD_ITPSUBSCRIBE_SHOW_FACEBOOK_DESC" class="btn-group">
 				   <option value="0">JHIDE</option>
 				   <option value="1">JSHOW</option>
 				</field>
@@ -95,10 +100,11 @@
                    <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
                    <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
-                
-				<field name="spacer4" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_TWITTER_LABEL" />
+            </fieldset>
+            
+            <fieldset name="twitter_options" label="MOD_ITPSUBSCRIBE_TWITTER_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_TWITTER_OPTIONS_DESC">
 				
-				<field name="show_twitter" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_TWITTER" description="MOD_ITPSUBSCRIBE_SHOW_TWITTER_DESC" >
+				<field name="show_twitter" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_TWITTER" description="MOD_ITPSUBSCRIBE_SHOW_TWITTER_DESC" class="btn-group">
 				   <option value="0">JHIDE</option>
 				   <option value="1">JSHOW</option>
 				</field>
@@ -109,9 +115,10 @@
                    <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
                    <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
-                
-				<field name="spacer5" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EMAIL_LABEL" />
-				<field name="show_email" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_EMAIL" description="MOD_ITPSUBSCRIBE_SHOW_EMAIL_DESC" >
+            </fieldset>
+            
+            <fieldset name="email_options" label="MOD_ITPSUBSCRIBE_EMAIL_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_EMAIL_OPTIONS_DESC">
+				<field name="show_email" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_EMAIL" description="MOD_ITPSUBSCRIBE_SHOW_EMAIL_DESC" class="btn-group">
 				   <option value="0">JHIDE</option>
 				   <option value="1">JSHOW</option>
 				</field>
@@ -122,9 +129,10 @@
                    <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
                    <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
-
-                <field name="spacer6" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_GOOGLE_LABEL" />
-                <field name="show_google" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_GOOGLE" description="MOD_ITPSUBSCRIBE_SHOW_GOOGLE_DESC" >
+            </fieldset>
+            
+            <fieldset name="google_options" label="MOD_ITPSUBSCRIBE_GOOGLE_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_GOOGLE_OPTIONS_DESC">
+                <field name="show_google" type="radio" default="1" label="MOD_ITPSUBSCRIBE_SHOW_GOOGLE" description="MOD_ITPSUBSCRIBE_SHOW_GOOGLE_DESC" class="btn-group">
                    <option value="0">JHIDE</option>
                    <option value="1">JSHOW</option>
                 </field>
@@ -135,9 +143,10 @@
                    <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
                    <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
-                                
-				<field name="spacer7" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_LABEL" />
-				<field name="show_extra_twitter" type="radio" default="0" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_DESC" >
+             </fieldset>
+             
+             <fieldset name="extra_twitter_options" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_OPTIONS_DESC">
+				<field name="show_extra_twitter" type="radio" default="0" label="MOD_ITPSUBSCRIBE_EXTRA_TWITTER" description="MOD_ITPSUBSCRIBE_EXTRA_TWITTER_DESC" class="btn-group">
 				   <option value="0">JHIDE</option>
 				   <option value="1">JSHOW</option>
 				</field>
@@ -316,14 +325,15 @@
                    <option value="0">MOD_ITPSUBSCRIBE_CURRENT_TAB</option>
                    <option value="1">MOD_ITPSUBSCRIBE_NEW_TAB</option>
                 </field>
-                
-				<field name="spacer8" type="spacer" class="text" label="MOD_ITPSUBSCRIBE_FEEDBURNER_FORM_LABEL" />
-				<field name="mail_form" type="radio" default="0" label="MOD_ITPSUBSCRIBE_MAIL_FORM" description="MOD_ITPSUBSCRIBE_MAIL_FORM_DESC" >
+            </fieldset>
+            
+            <fieldset name="feedburner_options" label="MOD_ITPSUBSCRIBE_FEEDBURNER_OPTIONS_LABEL" description="MOD_ITPSUBSCRIBE_FEEDBURNER_OPTIONS_DESC">
+				<field name="mail_form" type="radio" default="0" label="MOD_ITPSUBSCRIBE_MAIL_FORM" description="MOD_ITPSUBSCRIBE_MAIL_FORM_DESC" class="btn-group">
 				   <option value="0">JHIDE</option>
 				   <option value="1">JSHOW</option>
 				</field>
 				<field name="feedburner_uri" size="80" type="text" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_URI" description="MOD_ITPSUBSCRIBE_FEEDBURNER_URI_DESC" />
-				<field name="feedburner_style" type="textarea" default="border:1px solid #ccc;padding:3px;text-align:center;" label="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE" description="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE_DESC" cols="50" rows="3" filter="raw"/>
+				<field name="feedburner_style" type="textarea" default="border:1px solid #ccc;padding:3px;text-align:center;" label="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE" description="MOD_ITPSUBSCRIBE_FEEDBURNER_STYLE_DESC" cols="50" rows="3" filter="raw" class="span3" />
 				<field name="feedburner_iw" size="80" type="text" default="140" label="MOD_ITPSUBSCRIBE_FEEDBURNER_IW" description="MOD_ITPSUBSCRIBE_FEEDBURNER_IW_DESC" />
 				<field name="feedburner_bn" size="80" type="text" default="Subscribe" label="MOD_ITPSUBSCRIBE_FEEDBURNER_BN" description="MOD_ITPSUBSCRIBE_FEEDBURNER_BN_DESC" />
 				<field name="feedburner_l" type="list" default="en_US" label="MOD_ITPSUBSCRIBE_LANGUAGE" description="MOD_ITPSUBSCRIBE_LANGUAGE_DESC">
@@ -335,21 +345,21 @@
 					<option value="ru_RU">MOD_ITPSUBSCRIBE_RUSSIAN</option>
 					<option value="ja_JP">MOD_ITPSUBSCRIBE_JAPANESE</option>
 				</field>
-				<field name="header_text" type="textarea" rows="3" cols="40" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_HT" description="MOD_ITPSUBSCRIBE_FEEDBURNER_HT_DESC" />
+				<field name="header_text" type="textarea" default="" label="MOD_ITPSUBSCRIBE_FEEDBURNER_HT" description="MOD_ITPSUBSCRIBE_FEEDBURNER_HT_DESC" rows="3" cols="40"  class="span3"/>
 		</fieldset>
 
         <fieldset name="additional_buttons_code" label="MOD_ITPSUBSCRIBE_EXTRA_BUTTONS_LABEL">
         
-            <field name="ebuttons1" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-            <field name="ebuttons2" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-            <field name="ebuttons3" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-            <field name="ebuttons4" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
-            <field name="ebuttons5" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" />
+            <field name="ebuttons1" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+            <field name="ebuttons2" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+            <field name="ebuttons3" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+            <field name="ebuttons4" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
+            <field name="ebuttons5" type="textarea" default="" label="MOD_ITPSUBSCRIBE_CUSTOM_BTN_CODE" description="MOD_ITPSUBSCRIBE_EXTRA_BUTTON_DESC" cols="50" rows="10" filter="raw" class="span6" />
                
         </fieldset>
         
         <fieldset name="additional_form_code" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_LABEL">
-            <field name="eform" type="textarea" default="" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_TITLE" description="MOD_ITPSUBSCRIBE_EXTRA_FORM_DESC" cols="50" rows="10" filter="raw" />
+            <field name="eform" type="textarea" default="" label="MOD_ITPSUBSCRIBE_EXTRA_FORM_TITLE" description="MOD_ITPSUBSCRIBE_EXTRA_FORM_DESC" cols="50" rows="10" filter="raw" class="span6" />
         </fieldset>
         
 		<fieldset name="advanced">
@@ -374,6 +384,7 @@
                  default="900"
                  label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
                  description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+                 
              <field
                  name="cachemode"
                  type="hidden"
